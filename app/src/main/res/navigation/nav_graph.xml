@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/splashFragment">
+
+    <!-- Splash Screen Fragment -->
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.weatherapp.fragment.SplashFragment"
+        android:label="Splash">
+        <action
+            android:id="@+id/action_splashFragment_to_weatherFragment2"
+            app:destination="@id/weatherFragment2" />
+    </fragment>
+
+    <!-- Weather Fragment -->
+    <fragment
+        android:id="@+id/weatherFragment2"
+        android:name="com.example.weatherapp.fragment.WeatherFragment"
+        android:label="fragment_weather"
+        tools:layout="@layout/fragment_weather" />
+</navigation>
