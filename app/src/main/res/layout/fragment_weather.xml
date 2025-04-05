@@ -11,12 +11,11 @@
     tools:context=".fragment.WeatherFragment">
 
     <!-- City Selection -->
-    <EditText
+    <AutoCompleteTextView
         android:id="@+id/etCity"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Enter city name"
-
         android:padding="12dp"
         android:background="@drawable/rounded_edittext"
         android:textColorHint="#FFFFFF"

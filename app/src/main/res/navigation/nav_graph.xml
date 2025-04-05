@@ -11,7 +11,10 @@
         android:label="Splash">
         <action
             android:id="@+id/action_splashFragment_to_weatherFragment2"
-            app:destination="@id/weatherFragment2" />
+            app:destination="@id/weatherFragment2"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+
     </fragment>
 
     <!-- Weather Fragment -->
